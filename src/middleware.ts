@@ -8,14 +8,8 @@ async function middleware(req: NextRequest) {
 
   let currentHost =
     process.env.NODE_ENV === 'production' && process.env.VERCEL === '1'
-      ? hostname
-          .replace(`.worlddev.boston`, '')
-          .replace(`.worlddev.miami`, '')
-          .replace(`.worlddev.london`, '')
-      : hostname
-          .replace(`.app.localhost:3000`, '')
-          .replace(`.app.localhost:3001`, '')
-          .replace(`.app.localhost:3002`, '')
+      ? hostname.replace(`.mmnt.li`, '')
+      : hostname.replace(`.app.localhost:3000`, '')
 
   return NextResponse.rewrite(new URL(`/${currentHost}${pathname}`, req.url))
 }
