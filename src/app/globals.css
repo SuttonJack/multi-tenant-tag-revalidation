@@ -105,3 +105,87 @@ a {
     color-scheme: dark;
   }
 }
+
+div {
+  height: 100vh;
+  width: 800px;
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 16px;
+  gap: 64px;
+}
+
+span {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+code {
+  line-height: 2;
+  font-size: 16px;
+  color: white;
+}
+
+p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#emoji {
+  font-size: 24px;
+}
+
+button {
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  color-scheme: dark;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  font: inherit;
+  height: 36px;
+  line-height: 1.25em;
+  margin: 0;
+  max-width: 200px;
+  min-width: 200px;
+  outline: none;
+  padding: 0 12px;
+  position: relative;
+  text-decoration: none;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  transition-duration: 0.15s;
+  transition-property: border-color, background, color, box-shadow;
+  transition-timing-function: ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: baseline;
+}
+
+button:hover {
+  box-shadow: none;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
