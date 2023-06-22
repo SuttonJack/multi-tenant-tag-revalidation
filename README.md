@@ -2,7 +2,7 @@
 
 - This app is deployed on a wildcard, `*.mmnt.li`
 
-- The subdomain is used as the tag in `revalidateTag` to enable ISR for each site indivually
+- The subdomain is used as the [tag](https://github.com/SuttonJack/multi-tenant-tag-revalidation/blob/main/src/lib/getSiteData.ts#L9) in `revalidateTag` to enable on-demand revalidation for each site indivually
 
 ### Try it out
 
