@@ -1,5 +1,6 @@
 import React from 'react'
-import { getSiteData } from 'lib/getSiteData'
+import getSiteData from 'lib/getSiteData'
+import Button from 'app/components/button'
 
 export default async function DemoPage({
   params,
@@ -21,7 +22,7 @@ export default async function DemoPage({
         Your random emoji is: <br />
         <code id="emoji">{siteData.randomEmoji}</code>
       </p>
-      <button>Click me to revalidate</button>
+      <Button />
     </div>
   )
 }
